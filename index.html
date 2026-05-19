@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Language Agent | Autonomous AI Tool</title>
+    <meta name="description" content="Vision Language Agent: An autonomous desktop application that analyzes and renames your photos using local AI (Ollama & Llama 3.2 Vision).">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Background Blur Effects -->
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon">👁️</span> Vision<span class="highlight">Agent</span>
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#download" class="nav-btn">Download</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge">Version 1.0 is Live 🚀</div>
+            <h1>Auto-Rename Your Images with <span class="gradient-text">AI</span></h1>
+            <p>Vision Language Agent "looks" at your images, understands their content, and renames them intelligently. Best of all, it runs 100% locally on your machine—your data never goes to the cloud.</p>
+            
+            <div class="cta-group">
+                <a id="download" href="downloads/VisionLanguageAgent.exe" class="btn btn-primary" download="VisionLanguageAgent.exe">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 15M7 10L12 15M12 15L17 10M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Download for Windows (.exe)
+                </a>
+                <a href="#how-it-works" class="btn btn-secondary">Learn More</a>
+            </div>
+            
+            <div class="os-support">
+                <span>Supported Platforms:</span>
+                <span class="os-icon">🪟 Windows (x64)</span>
+                <span class="os-icon">🍎 macOS (Intel / M-Series)</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <div class="section-header">
+            <h2>What Can It Do?</h2>
+            <p>An autonomous assistant powered by local Large Vision Models (LVM).</p>
+        </div>
+        
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">🧠</div>
+                <h3>Smart Analysis</h3>
+                <p>Uses the Llama 3.2 Vision model to analyze image content with incredible accuracy, generating concise names like "black-motorcycle.jpg".</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🔒</div>
+                <h3>100% Local & Private</h3>
+                <p>Powered by Ollama. Your files and images are never uploaded to the internet; they stay completely secure on your device.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">⚡</div>
+                <h3>Autonomous Lifecycle</h3>
+                <p>Automatically starts Ollama in the background, downloads the required AI model by itself, and cleans up VRAM when finished.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🛡️</div>
+                <h3>Collision Protection</h3>
+                <p>If two files get the same name, a smart numbering system steps in to prevent your existing files from being overwritten.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="how-container">
+            <div class="how-content">
+                <h2>How It Works?</h2>
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-text">
+                        <h4>Select Folder</h4>
+                        <p>When you launch the app, simply select the folder containing your images from the native prompt.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-text">
+                        <h4>Sit Back and Relax</h4>
+                        <p>The agent prepares the AI engine (Ollama) in the background. It even downloads the model automatically if it's missing.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-text">
+                        <h4>See the Results</h4>
+                        <p>Thousands of images are scanned rapidly, their contents understood, and renamed to meaningful titles in seconds.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="how-image">
+                <div class="glass-mockup">
+                    <div class="mockup-header">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="mockup-body">
+                        <div class="log-line success">[SUCCESS] Selected Folder: C:\Images</div>
+                        <div class="log-line info">[OLLAMA] Checking service status...</div>
+                        <div class="log-line info">[OLLAMA] Service is already running.</div>
+                        <div class="log-line warning">[MODEL] 'llama3.2-vision' model is present.</div>
+                        <div class="log-line success">[1/500] Processing: IMG_2023.jpg -> red-car.jpg</div>
+                        <div class="log-line success">[2/500] Processing: DCIM01.png -> office-desk.png</div>
+                        <div class="cursor"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="logo">
+                <span class="logo-icon">👁️</span> Vision<span class="highlight">Agent</span>
+            </div>
+            <p>AI-powered autonomous file management.</p>
+            <p class="copyright">© 2026 Vision Language Agent. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
